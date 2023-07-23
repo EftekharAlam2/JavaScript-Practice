@@ -6,6 +6,6 @@ function isPalindrome(str) {
   return cleanedStr === reversedStr;
 }
 
-const inputString = "ami";
+const inputString = "madam";
 console.log("Input String:", inputString);
 console.log("Is it a palindrome?", isPalindrome(inputString));
