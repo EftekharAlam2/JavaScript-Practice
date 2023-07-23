@@ -1,0 +1,22 @@
+function countVowelsAndConsonants(str) {
+  const vowels = "aeiouAEIOU";
+  let vowelCount = 0;
+  let consonantCount = 0;
+
+  for (const char of str) {
+    if (vowels.includes(char)) {
+      vowelCount++;
+    } else if (char.match(/[a-zA-Z]/)) {
+      consonantCount++;
+    }
+  }
+
+  return vowelCount, consonantCount;
+}
+
+const inputString = "Hello, World!";
+const result = countVowelsAndConsonants(inputString);
+
+console.log("Input String:", inputString);
+console.log("Number of vowels:", result.vowelCount);
+console.log("Number of consonants:", result.consonantCount);
