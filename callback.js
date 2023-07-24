@@ -1,5 +1,6 @@
 function greetUser(name, callback) {
   console.log("Hello, " + name + "!");
+  //Callback
   if (typeof callback === "function") {
     callback();
   }
